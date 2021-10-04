@@ -12,6 +12,9 @@ using Autodesk.Revit.UI;
 using System.IO;
 using Auto_ManHole;
 using System.Runtime.InteropServices;
+using System.Net.Http;
+using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace auto_line
 {
@@ -124,8 +127,65 @@ namespace auto_line
             ToolTip toolTip = new ToolTip();
             toolTip.SetToolTip(ParticalSelBtm, "使用者選取管線，並查詢管線相關資訊");
             toolTip.SetToolTip(CallBackBtm, "使用者輸入數量計算書之管線ID，並將其獨立顯示");
-        }
 
+            HttpClient client = client_login();
+            if (client == null)
+            {
+                label1.Text += "認證失敗，10秒後強制關閉";
+                this.Enabled = false;
+                timer1.Start();
+            }
+            var result = client.GetAsync($"/user/me").Result;
+            if (result.IsSuccessStatusCode)
+            {
+                string s = result.Content.ReadAsStringAsync().Result;
+                label1.Text += DecodeEncodedNonAsciiCharacters(s.Substring(8, s.Length - 10));
+
+
+            }
+            else
+            {
+
+                //MessageBox.Show("認證失敗，5秒後強制關閉");
+                label1.Text += "認證失敗，10秒後強制關閉";
+                this.Enabled = false;
+                timer1.Start();
+                //System.Threading.Thread.Sleep(5000);
+                //this.Dispose();
+            }
+        }
+        //登入驗證
+        public static HttpClient client_login()
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
+                //client.BaseAddress = new Uri("http://127.0.0.1:8000/");            
+                client.BaseAddress = new Uri("http://bimdata.secltd/");
+                client.DefaultRequestHeaders.Accept.Clear();
+                var headerValue = new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json");
+                client.DefaultRequestHeaders.Accept.Add(headerValue);
+                client.DefaultRequestHeaders.ConnectionClose = true;
+                Task.WaitAll(client.GetAsync($"/login/?USERNAME={Environment.UserName}&REVITAPI=SinoPipe"));
+                //Task.WaitAll(client.GetAsync($"/login/?USERNAME=11111&REVITAPI=SinoPipe"));
+                return client;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+        }
+        // 中文解碼
+        static string DecodeEncodedNonAsciiCharacters(string value)
+        {
+            return Regex.Replace(
+                value,
+                @"\\u(?<Value>[a-zA-Z0-9]{4})",
+                m => {
+                    return ((char)int.Parse(m.Groups["Value"].Value, NumberStyles.HexNumber)).ToString();
+                });
+        }
         //數量計算樣板檔選擇按鍵
         private void button1_Click(object sender, EventArgs e)
         {
