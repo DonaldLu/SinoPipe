@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>SinoPipe</Name>
+    <Assembly>..\SinoPipe\auto_line.dll</Assembly>
+    <FullClassName>auto_line.App</FullClassName>
+    <AddInId>1fbf8ef8-550e-4725-8fd6-60c673470f4c</AddInId>
+    <VendorId>Sinotech Engineering Consultants, LTD.</VendorId>
+    <VendorDescription>inf-ctr@sinotech.com.tw</VendorDescription>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+</RevitAddIns>

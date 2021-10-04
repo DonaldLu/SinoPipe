@@ -121,10 +121,16 @@
   <data name="榮耀黃" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\榮耀黃.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="淵海藍" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\淵海藍.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="玫瑰紅" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\玫瑰紅.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="淵海藍" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\淵海藍.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="藍灰2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\藍灰2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

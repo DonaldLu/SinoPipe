@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.uploadbutton = new System.Windows.Forms.Button();
             this.outputbutton = new System.Windows.Forms.Button();
@@ -82,6 +83,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.homeleftpanel = new auto_line.GradientPanel();
             this.dragControl2 = new auto_line.DragControl();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.outputpanel.SuspendLayout();
             this.main.SuspendLayout();
             this.picturepanel.SuspendLayout();
@@ -102,10 +104,9 @@
             this.uploadbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uploadbutton.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold);
             this.uploadbutton.ForeColor = System.Drawing.Color.AliceBlue;
-            this.uploadbutton.Location = new System.Drawing.Point(0, 250);
-            this.uploadbutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.uploadbutton.Location = new System.Drawing.Point(0, 125);
             this.uploadbutton.Name = "uploadbutton";
-            this.uploadbutton.Size = new System.Drawing.Size(303, 260);
+            this.uploadbutton.Size = new System.Drawing.Size(140, 130);
             this.uploadbutton.TabIndex = 15;
             this.uploadbutton.Text = "讀取資料";
             this.uploadbutton.UseVisualStyleBackColor = false;
@@ -118,10 +119,9 @@
             this.outputbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.outputbutton.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold);
             this.outputbutton.ForeColor = System.Drawing.Color.AliceBlue;
-            this.outputbutton.Location = new System.Drawing.Point(0, 510);
-            this.outputbutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.outputbutton.Location = new System.Drawing.Point(0, 255);
             this.outputbutton.Name = "outputbutton";
-            this.outputbutton.Size = new System.Drawing.Size(303, 260);
+            this.outputbutton.Size = new System.Drawing.Size(140, 130);
             this.outputbutton.TabIndex = 16;
             this.outputbutton.Text = "建立模型";
             this.outputbutton.UseVisualStyleBackColor = false;
@@ -130,10 +130,9 @@
             // leftpanel
             // 
             this.leftpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
-            this.leftpanel.Location = new System.Drawing.Point(303, 250);
-            this.leftpanel.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.leftpanel.Location = new System.Drawing.Point(140, 125);
             this.leftpanel.Name = "leftpanel";
-            this.leftpanel.Size = new System.Drawing.Size(22, 260);
+            this.leftpanel.Size = new System.Drawing.Size(10, 130);
             this.leftpanel.TabIndex = 17;
             // 
             // loadbutton
@@ -144,10 +143,10 @@
             this.loadbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loadbutton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.loadbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadbutton.Location = new System.Drawing.Point(748, 414);
-            this.loadbutton.Margin = new System.Windows.Forms.Padding(4);
+            this.loadbutton.Location = new System.Drawing.Point(345, 207);
+            this.loadbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.loadbutton.Name = "loadbutton";
-            this.loadbutton.Size = new System.Drawing.Size(108, 60);
+            this.loadbutton.Size = new System.Drawing.Size(50, 30);
             this.loadbutton.TabIndex = 1;
             this.loadbutton.UseVisualStyleBackColor = false;
             this.loadbutton.Click += new System.EventHandler(this.button1_Click);
@@ -156,10 +155,10 @@
             // 
             this.upload_textbox.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.upload_textbox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.upload_textbox.Location = new System.Drawing.Point(132, 416);
-            this.upload_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.upload_textbox.Location = new System.Drawing.Point(61, 208);
+            this.upload_textbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.upload_textbox.Name = "upload_textbox";
-            this.upload_textbox.Size = new System.Drawing.Size(574, 50);
+            this.upload_textbox.Size = new System.Drawing.Size(267, 29);
             this.upload_textbox.TabIndex = 0;
             this.upload_textbox.Text = "請上傳檔案至此";
             this.upload_textbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -172,10 +171,10 @@
             this.handpilebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.handpilebutton.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.handpilebutton.ForeColor = System.Drawing.Color.White;
-            this.handpilebutton.Location = new System.Drawing.Point(301, 418);
-            this.handpilebutton.Margin = new System.Windows.Forms.Padding(4);
+            this.handpilebutton.Location = new System.Drawing.Point(139, 209);
+            this.handpilebutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.handpilebutton.Name = "handpilebutton";
-            this.handpilebutton.Size = new System.Drawing.Size(455, 90);
+            this.handpilebutton.Size = new System.Drawing.Size(210, 45);
             this.handpilebutton.TabIndex = 22;
             this.handpilebutton.Text = "建置人手孔";
             this.handpilebutton.UseVisualStyleBackColor = false;
@@ -189,10 +188,10 @@
             this.pilebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pilebutton.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.pilebutton.ForeColor = System.Drawing.Color.White;
-            this.pilebutton.Location = new System.Drawing.Point(301, 76);
-            this.pilebutton.Margin = new System.Windows.Forms.Padding(4);
+            this.pilebutton.Location = new System.Drawing.Point(139, 38);
+            this.pilebutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pilebutton.Name = "pilebutton";
-            this.pilebutton.Size = new System.Drawing.Size(455, 90);
+            this.pilebutton.Size = new System.Drawing.Size(210, 45);
             this.pilebutton.TabIndex = 23;
             this.pilebutton.Text = "建置管線";
             this.pilebutton.UseVisualStyleBackColor = false;
@@ -207,10 +206,9 @@
             this.outputpanel.Controls.Add(this.ditchbutton);
             this.outputpanel.Controls.Add(this.pilebutton);
             this.outputpanel.Controls.Add(this.handpilebutton);
-            this.outputpanel.Location = new System.Drawing.Point(1313, 862);
-            this.outputpanel.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.outputpanel.Location = new System.Drawing.Point(606, 431);
             this.outputpanel.Name = "outputpanel";
-            this.outputpanel.Size = new System.Drawing.Size(975, 850);
+            this.outputpanel.Size = new System.Drawing.Size(450, 425);
             this.outputpanel.TabIndex = 19;
             this.outputpanel.Visible = false;
             this.outputpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.outputpanel_Paint);
@@ -223,10 +221,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(301, 172);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(139, 86);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(455, 86);
+            this.button4.Size = new System.Drawing.Size(210, 43);
             this.button4.TabIndex = 25;
             this.button4.Text = "修正埋管深度";
             this.button4.UseVisualStyleBackColor = false;
@@ -240,10 +238,10 @@
             this.ditchbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ditchbutton.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.ditchbutton.ForeColor = System.Drawing.Color.White;
-            this.ditchbutton.Location = new System.Drawing.Point(301, 624);
-            this.ditchbutton.Margin = new System.Windows.Forms.Padding(4);
+            this.ditchbutton.Location = new System.Drawing.Point(139, 312);
+            this.ditchbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ditchbutton.Name = "ditchbutton";
-            this.ditchbutton.Size = new System.Drawing.Size(455, 90);
+            this.ditchbutton.Size = new System.Drawing.Size(210, 45);
             this.ditchbutton.TabIndex = 24;
             this.ditchbutton.Text = "建置側溝";
             this.ditchbutton.UseVisualStyleBackColor = false;
@@ -256,10 +254,9 @@
             this.pictureout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pictureout.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold);
             this.pictureout.ForeColor = System.Drawing.Color.AliceBlue;
-            this.pictureout.Location = new System.Drawing.Point(0, 770);
-            this.pictureout.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureout.Location = new System.Drawing.Point(0, 385);
             this.pictureout.Name = "pictureout";
-            this.pictureout.Size = new System.Drawing.Size(303, 260);
+            this.pictureout.Size = new System.Drawing.Size(140, 130);
             this.pictureout.TabIndex = 23;
             this.pictureout.Text = "圖資產出";
             this.pictureout.UseVisualStyleBackColor = false;
@@ -272,10 +269,9 @@
             this.main.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.main.Controls.Add(this.upload_textbox);
             this.main.Controls.Add(this.loadbutton);
-            this.main.Location = new System.Drawing.Point(1313, 0);
-            this.main.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.main.Location = new System.Drawing.Point(606, 0);
             this.main.Name = "main";
-            this.main.Size = new System.Drawing.Size(975, 850);
+            this.main.Size = new System.Drawing.Size(450, 425);
             this.main.TabIndex = 25;
             // 
             // picturepanel
@@ -284,10 +280,9 @@
             this.picturepanel.BackgroundImage = global::auto_line.Properties.Resources.淵海藍;
             this.picturepanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picturepanel.Controls.Add(this.tabControl1);
-            this.picturepanel.Location = new System.Drawing.Point(2301, 308);
-            this.picturepanel.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.picturepanel.Location = new System.Drawing.Point(1062, 154);
             this.picturepanel.Name = "picturepanel";
-            this.picturepanel.Size = new System.Drawing.Size(975, 850);
+            this.picturepanel.Size = new System.Drawing.Size(450, 425);
             this.picturepanel.TabIndex = 26;
             // 
             // tabControl1
@@ -297,10 +292,10 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1099, 870);
+            this.tabControl1.Size = new System.Drawing.Size(507, 435);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -315,11 +310,11 @@
             this.tabPage1.Controls.Add(this.picture_button);
             this.tabPage1.Controls.Add(this.picture_comboBox1);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPage1.Location = new System.Drawing.Point(8, 69);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 37);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1083, 793);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(499, 394);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "  剖面";
             // 
@@ -332,10 +327,10 @@
             this.SectionViewBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SectionViewBtn.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.SectionViewBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.SectionViewBtn.Location = new System.Drawing.Point(680, 350);
-            this.SectionViewBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SectionViewBtn.Location = new System.Drawing.Point(314, 175);
+            this.SectionViewBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SectionViewBtn.Name = "SectionViewBtn";
-            this.SectionViewBtn.Size = new System.Drawing.Size(234, 76);
+            this.SectionViewBtn.Size = new System.Drawing.Size(108, 38);
             this.SectionViewBtn.TabIndex = 46;
             this.SectionViewBtn.Text = "選取剖面";
             this.SectionViewBtn.UseVisualStyleBackColor = false;
@@ -345,10 +340,10 @@
             // 
             this.picture_textBox.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.picture_textBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.picture_textBox.Location = new System.Drawing.Point(95, 242);
-            this.picture_textBox.Margin = new System.Windows.Forms.Padding(4);
+            this.picture_textBox.Location = new System.Drawing.Point(44, 121);
+            this.picture_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picture_textBox.Name = "picture_textBox";
-            this.picture_textBox.Size = new System.Drawing.Size(574, 50);
+            this.picture_textBox.Size = new System.Drawing.Size(267, 29);
             this.picture_textBox.TabIndex = 41;
             this.picture_textBox.Text = "載入CAD檔";
             this.picture_textBox.TextChanged += new System.EventHandler(this.picture_textBox_TextChanged);
@@ -359,10 +354,9 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(93, 364);
-            this.label3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label3.Location = new System.Drawing.Point(43, 182);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 48);
+            this.label3.Size = new System.Drawing.Size(96, 24);
             this.label3.TabIndex = 43;
             this.label3.Text = "剖面數量 :";
             // 
@@ -374,10 +368,10 @@
             this.picture_Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.picture_Button1.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.picture_Button1.ForeColor = System.Drawing.Color.White;
-            this.picture_Button1.Location = new System.Drawing.Point(95, 484);
-            this.picture_Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.picture_Button1.Location = new System.Drawing.Point(44, 242);
+            this.picture_Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picture_Button1.Name = "picture_Button1";
-            this.picture_Button1.Size = new System.Drawing.Size(247, 62);
+            this.picture_Button1.Size = new System.Drawing.Size(114, 31);
             this.picture_Button1.TabIndex = 44;
             this.picture_Button1.Text = "開始出圖";
             this.picture_Button1.UseVisualStyleBackColor = false;
@@ -392,10 +386,10 @@
             this.picture_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.picture_button.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.picture_button.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.picture_button.Location = new System.Drawing.Point(680, 232);
-            this.picture_button.Margin = new System.Windows.Forms.Padding(4);
+            this.picture_button.Location = new System.Drawing.Point(314, 116);
+            this.picture_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picture_button.Name = "picture_button";
-            this.picture_button.Size = new System.Drawing.Size(234, 76);
+            this.picture_button.Size = new System.Drawing.Size(108, 38);
             this.picture_button.TabIndex = 42;
             this.picture_button.Text = "選取圖框";
             this.picture_button.UseVisualStyleBackColor = false;
@@ -404,10 +398,9 @@
             // picture_comboBox1
             // 
             this.picture_comboBox1.FormattingEnabled = true;
-            this.picture_comboBox1.Location = new System.Drawing.Point(303, 354);
-            this.picture_comboBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.picture_comboBox1.Location = new System.Drawing.Point(140, 177);
             this.picture_comboBox1.Name = "picture_comboBox1";
-            this.picture_comboBox1.Size = new System.Drawing.Size(154, 63);
+            this.picture_comboBox1.Size = new System.Drawing.Size(73, 36);
             this.picture_comboBox1.TabIndex = 45;
             this.picture_comboBox1.SelectedIndexChanged += new System.EventHandler(this.picture_comboBox1_SelectedIndexChanged);
             // 
@@ -418,11 +411,11 @@
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Location = new System.Drawing.Point(8, 69);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 37);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1083, 793);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(499, 394);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "模型倒出";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -436,10 +429,10 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(455, 292);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(210, 146);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 60);
+            this.button2.Size = new System.Drawing.Size(50, 30);
             this.button2.TabIndex = 50;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_2);
@@ -448,10 +441,9 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("微軟正黑體", 12F);
             this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(80, 288);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox1.Location = new System.Drawing.Point(37, 144);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(310, 50);
+            this.textBox1.Size = new System.Drawing.Size(145, 29);
             this.textBox1.TabIndex = 49;
             this.textBox1.Text = "選取樣板檔";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
@@ -464,10 +456,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(251, 392);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(116, 196);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(247, 62);
+            this.button3.Size = new System.Drawing.Size(114, 31);
             this.button3.TabIndex = 48;
             this.button3.Text = "模型倒出";
             this.button3.UseVisualStyleBackColor = false;
@@ -485,11 +477,11 @@
             this.tabPage3.Controls.Add(this.CallBacktextBox);
             this.tabPage3.Controls.Add(this.AllOutputBtm);
             this.tabPage3.Controls.Add(this.ExceltextBox);
-            this.tabPage3.Location = new System.Drawing.Point(8, 69);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 37);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(1083, 793);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Size = new System.Drawing.Size(499, 394);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "數量計算";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -502,10 +494,10 @@
             this.save_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.save_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.save_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.save_btn.Location = new System.Drawing.Point(698, 70);
-            this.save_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.save_btn.Location = new System.Drawing.Point(322, 35);
+            this.save_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(108, 60);
+            this.save_btn.Size = new System.Drawing.Size(50, 30);
             this.save_btn.TabIndex = 30;
             this.save_btn.UseVisualStyleBackColor = false;
             this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
@@ -514,10 +506,10 @@
             // 
             this.save_textbox.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.save_textbox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.save_textbox.Location = new System.Drawing.Point(82, 70);
-            this.save_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.save_textbox.Location = new System.Drawing.Point(38, 35);
+            this.save_textbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.save_textbox.Name = "save_textbox";
-            this.save_textbox.Size = new System.Drawing.Size(574, 50);
+            this.save_textbox.Size = new System.Drawing.Size(267, 29);
             this.save_textbox.TabIndex = 28;
             this.save_textbox.Text = "請選擇欲儲存路徑";
             // 
@@ -529,10 +521,10 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(698, 284);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(322, 142);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 60);
+            this.button1.Size = new System.Drawing.Size(50, 30);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
@@ -545,10 +537,10 @@
             this.ParticalSelBtm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ParticalSelBtm.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.ParticalSelBtm.ForeColor = System.Drawing.Color.White;
-            this.ParticalSelBtm.Location = new System.Drawing.Point(82, 508);
-            this.ParticalSelBtm.Margin = new System.Windows.Forms.Padding(4);
+            this.ParticalSelBtm.Location = new System.Drawing.Point(38, 254);
+            this.ParticalSelBtm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ParticalSelBtm.Name = "ParticalSelBtm";
-            this.ParticalSelBtm.Size = new System.Drawing.Size(438, 90);
+            this.ParticalSelBtm.Size = new System.Drawing.Size(202, 45);
             this.ParticalSelBtm.TabIndex = 25;
             this.ParticalSelBtm.Tag = "使用者選取管線，並查詢管線相關資訊";
             this.ParticalSelBtm.Text = "查詢管線資訊";
@@ -563,10 +555,10 @@
             this.CallBackBtm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CallBackBtm.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.CallBackBtm.ForeColor = System.Drawing.Color.White;
-            this.CallBackBtm.Location = new System.Drawing.Point(670, 604);
-            this.CallBackBtm.Margin = new System.Windows.Forms.Padding(4);
+            this.CallBackBtm.Location = new System.Drawing.Point(309, 302);
+            this.CallBackBtm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CallBackBtm.Name = "CallBackBtm";
-            this.CallBackBtm.Size = new System.Drawing.Size(280, 90);
+            this.CallBackBtm.Size = new System.Drawing.Size(129, 45);
             this.CallBackBtm.TabIndex = 27;
             this.CallBackBtm.Tag = "使用者輸入數量計算書之管線ID，並將其獨立顯示";
             this.CallBackBtm.Text = "獨立顯示";
@@ -577,10 +569,10 @@
             // 
             this.CallBacktextBox.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.CallBacktextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.CallBacktextBox.Location = new System.Drawing.Point(82, 624);
-            this.CallBacktextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CallBacktextBox.Location = new System.Drawing.Point(38, 312);
+            this.CallBacktextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CallBacktextBox.Name = "CallBacktextBox";
-            this.CallBacktextBox.Size = new System.Drawing.Size(574, 50);
+            this.CallBacktextBox.Size = new System.Drawing.Size(267, 29);
             this.CallBacktextBox.TabIndex = 26;
             this.CallBacktextBox.Text = "請輸入欲檢測之管線的ID";
             this.CallBacktextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
@@ -593,10 +585,10 @@
             this.AllOutputBtm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AllOutputBtm.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.AllOutputBtm.ForeColor = System.Drawing.Color.White;
-            this.AllOutputBtm.Location = new System.Drawing.Point(82, 388);
-            this.AllOutputBtm.Margin = new System.Windows.Forms.Padding(4);
+            this.AllOutputBtm.Location = new System.Drawing.Point(38, 194);
+            this.AllOutputBtm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AllOutputBtm.Name = "AllOutputBtm";
-            this.AllOutputBtm.Size = new System.Drawing.Size(438, 90);
+            this.AllOutputBtm.Size = new System.Drawing.Size(202, 45);
             this.AllOutputBtm.TabIndex = 24;
             this.AllOutputBtm.Text = "數量計算";
             this.AllOutputBtm.UseVisualStyleBackColor = false;
@@ -606,10 +598,10 @@
             // 
             this.ExceltextBox.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.ExceltextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.ExceltextBox.Location = new System.Drawing.Point(82, 292);
-            this.ExceltextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ExceltextBox.Location = new System.Drawing.Point(38, 146);
+            this.ExceltextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ExceltextBox.Name = "ExceltextBox";
-            this.ExceltextBox.Size = new System.Drawing.Size(574, 50);
+            this.ExceltextBox.Size = new System.Drawing.Size(267, 29);
             this.ExceltextBox.TabIndex = 3;
             this.ExceltextBox.Text = "請選擇欲寫入樣板";
             // 
@@ -623,10 +615,9 @@
             this.homebuttompanel.Controls.Add(this.textBox_x);
             this.homebuttompanel.Controls.Add(this.textBox_y);
             this.homebuttompanel.Controls.Add(this.textBox_z);
-            this.homebuttompanel.Location = new System.Drawing.Point(325, 1100);
-            this.homebuttompanel.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.homebuttompanel.Location = new System.Drawing.Point(150, 550);
             this.homebuttompanel.Name = "homebuttompanel";
-            this.homebuttompanel.Size = new System.Drawing.Size(975, 300);
+            this.homebuttompanel.Size = new System.Drawing.Size(450, 150);
             this.homebuttompanel.TabIndex = 24;
             this.homebuttompanel.Paint += new System.Windows.Forms.PaintEventHandler(this.homebuttompanel_Paint);
             // 
@@ -636,10 +627,9 @@
             this.labelz.BackColor = System.Drawing.Color.Transparent;
             this.labelz.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.labelz.ForeColor = System.Drawing.Color.AliceBlue;
-            this.labelz.Location = new System.Drawing.Point(178, 200);
-            this.labelz.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.labelz.Location = new System.Drawing.Point(82, 100);
             this.labelz.Name = "labelz";
-            this.labelz.Size = new System.Drawing.Size(291, 48);
+            this.labelz.Size = new System.Drawing.Size(146, 24);
             this.labelz.TabIndex = 24;
             this.labelz.Text = "z座標平移量(m)";
             // 
@@ -649,10 +639,9 @@
             this.labelx.BackColor = System.Drawing.Color.Transparent;
             this.labelx.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.labelx.ForeColor = System.Drawing.Color.AliceBlue;
-            this.labelx.Location = new System.Drawing.Point(178, 58);
-            this.labelx.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.labelx.Location = new System.Drawing.Point(82, 29);
             this.labelx.Name = "labelx";
-            this.labelx.Size = new System.Drawing.Size(292, 48);
+            this.labelx.Size = new System.Drawing.Size(147, 24);
             this.labelx.TabIndex = 22;
             this.labelx.Text = "x座標平移量(m)";
             // 
@@ -662,10 +651,9 @@
             this.labely.BackColor = System.Drawing.Color.Transparent;
             this.labely.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold);
             this.labely.ForeColor = System.Drawing.Color.AliceBlue;
-            this.labely.Location = new System.Drawing.Point(178, 130);
-            this.labely.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.labely.Location = new System.Drawing.Point(82, 65);
             this.labely.Name = "labely";
-            this.labely.Size = new System.Drawing.Size(293, 48);
+            this.labely.Size = new System.Drawing.Size(147, 24);
             this.labely.TabIndex = 23;
             this.labely.Text = "y座標平移量(m)";
             // 
@@ -673,10 +661,9 @@
             // 
             this.textBox_x.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox_x.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox_x.Location = new System.Drawing.Point(509, 58);
-            this.textBox_x.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox_x.Location = new System.Drawing.Point(235, 29);
             this.textBox_x.Name = "textBox_x";
-            this.textBox_x.Size = new System.Drawing.Size(297, 39);
+            this.textBox_x.Size = new System.Drawing.Size(139, 23);
             this.textBox_x.TabIndex = 19;
             this.textBox_x.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_x.TextChanged += new System.EventHandler(this.textBox_x_TextChanged);
@@ -685,10 +672,9 @@
             // 
             this.textBox_y.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox_y.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox_y.Location = new System.Drawing.Point(509, 130);
-            this.textBox_y.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox_y.Location = new System.Drawing.Point(235, 65);
             this.textBox_y.Name = "textBox_y";
-            this.textBox_y.Size = new System.Drawing.Size(297, 39);
+            this.textBox_y.Size = new System.Drawing.Size(139, 23);
             this.textBox_y.TabIndex = 20;
             this.textBox_y.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -696,10 +682,9 @@
             // 
             this.textBox_z.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox_z.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox_z.Location = new System.Drawing.Point(509, 204);
-            this.textBox_z.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox_z.Location = new System.Drawing.Point(235, 102);
             this.textBox_z.Name = "textBox_z";
-            this.textBox_z.Size = new System.Drawing.Size(297, 39);
+            this.textBox_z.Size = new System.Drawing.Size(139, 23);
             this.textBox_z.TabIndex = 21;
             this.textBox_z.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -712,10 +697,9 @@
             this.panel2.Controls.Add(this.settingbutton);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.homebutton);
-            this.panel2.Location = new System.Drawing.Point(0, 100);
-            this.panel2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.panel2.Location = new System.Drawing.Point(0, 50);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1300, 150);
+            this.panel2.Size = new System.Drawing.Size(600, 75);
             this.panel2.TabIndex = 21;
             // 
             // label4
@@ -724,10 +708,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.label4.Location = new System.Drawing.Point(862, 92);
-            this.label4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label4.Location = new System.Drawing.Point(398, 46);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 53);
+            this.label4.Size = new System.Drawing.Size(85, 26);
             this.label4.TabIndex = 23;
             this.label4.Text = "v1.0.13";
             // 
@@ -737,10 +720,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 21.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.label2.Location = new System.Drawing.Point(147, 36);
-            this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label2.Location = new System.Drawing.Point(68, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(680, 73);
+            this.label2.Size = new System.Drawing.Size(340, 37);
             this.label2.TabIndex = 22;
             this.label2.Text = "—管線自動化建模系統—";
             // 
@@ -751,10 +733,9 @@
             this.settingbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.settingbutton.FlatAppearance.BorderSize = 0;
             this.settingbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingbutton.Location = new System.Drawing.Point(1166, 26);
-            this.settingbutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.settingbutton.Location = new System.Drawing.Point(538, 13);
             this.settingbutton.Name = "settingbutton";
-            this.settingbutton.Size = new System.Drawing.Size(108, 100);
+            this.settingbutton.Size = new System.Drawing.Size(50, 50);
             this.settingbutton.TabIndex = 16;
             this.settingbutton.UseVisualStyleBackColor = false;
             this.settingbutton.Click += new System.EventHandler(this.settingbutton_Click);
@@ -764,10 +745,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(26, 26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(108, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -779,10 +759,9 @@
             this.homebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.homebutton.FlatAppearance.BorderSize = 0;
             this.homebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.homebutton.Location = new System.Drawing.Point(1012, 26);
-            this.homebutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.homebutton.Location = new System.Drawing.Point(467, 13);
             this.homebutton.Name = "homebutton";
-            this.homebutton.Size = new System.Drawing.Size(108, 100);
+            this.homebutton.Size = new System.Drawing.Size(50, 50);
             this.homebutton.TabIndex = 15;
             this.homebutton.UseVisualStyleBackColor = false;
             this.homebutton.Click += new System.EventHandler(this.homebutton_Click);
@@ -795,9 +774,8 @@
             this.header.Controls.Add(this.mini);
             this.header.Controls.Add(this.label1);
             this.header.Location = new System.Drawing.Point(0, 0);
-            this.header.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(1300, 100);
+            this.header.Size = new System.Drawing.Size(600, 50);
             this.header.TabIndex = 20;
             // 
             // leavebutton
@@ -807,10 +785,9 @@
             this.leavebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.leavebutton.FlatAppearance.BorderSize = 0;
             this.leavebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.leavebutton.Location = new System.Drawing.Point(1200, 30);
-            this.leavebutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.leavebutton.Location = new System.Drawing.Point(554, 15);
             this.leavebutton.Name = "leavebutton";
-            this.leavebutton.Size = new System.Drawing.Size(54, 50);
+            this.leavebutton.Size = new System.Drawing.Size(25, 25);
             this.leavebutton.TabIndex = 14;
             this.leavebutton.UseVisualStyleBackColor = false;
             this.leavebutton.Click += new System.EventHandler(this.leavebutton_Click);
@@ -822,10 +799,9 @@
             this.mini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mini.FlatAppearance.BorderSize = 0;
             this.mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mini.Location = new System.Drawing.Point(1090, 30);
-            this.mini.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.mini.Location = new System.Drawing.Point(503, 15);
             this.mini.Name = "mini";
-            this.mini.Size = new System.Drawing.Size(54, 50);
+            this.mini.Size = new System.Drawing.Size(25, 25);
             this.mini.TabIndex = 13;
             this.mini.UseVisualStyleBackColor = false;
             this.mini.Click += new System.EventHandler(this.mini_Click);
@@ -836,10 +812,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(26, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 48);
+            this.label1.Size = new System.Drawing.Size(98, 25);
             this.label1.TabIndex = 14;
             this.label1.Text = "SinoPipe";
             // 
@@ -847,10 +822,9 @@
             // 
             this.homeleftpanel.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.homeleftpanel.ColorTop = System.Drawing.Color.DodgerBlue;
-            this.homeleftpanel.Location = new System.Drawing.Point(0, 250);
-            this.homeleftpanel.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.homeleftpanel.Location = new System.Drawing.Point(0, 125);
             this.homeleftpanel.Name = "homeleftpanel";
-            this.homeleftpanel.Size = new System.Drawing.Size(325, 1150);
+            this.homeleftpanel.Size = new System.Drawing.Size(150, 575);
             this.homeleftpanel.TabIndex = 22;
             // 
             // dragControl2
@@ -859,11 +833,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(2590, 1576);
+            this.ClientSize = new System.Drawing.Size(1195, 550);
             this.Controls.Add(this.main);
             this.Controls.Add(this.picturepanel);
             this.Controls.Add(this.homebuttompanel);
@@ -879,7 +853,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -961,5 +935,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Timer timer1;
     }
 }

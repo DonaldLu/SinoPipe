@@ -26,7 +26,8 @@ namespace auto_line
             FamilyInstance a = document.Create.NewFamilyInstance(XYZ.Zero, familySymbol, StructuralType.NonStructural);
             Color color = new Color(255, 127, 0); // RGB
             OverrideGraphicSettings overrideGraphicSettings = new OverrideGraphicSettings();
-            overrideGraphicSettings.SetProjectionFillColor(color);
+            //overrideGraphicSettings.SetProjectionFillColor(color);
+            overrideGraphicSettings.SetProjectionLineColor(color);
             document.ActiveView.SetElementOverrides(a.Id, overrideGraphicSettings);
             t.Commit();
             return Result.Succeeded;
