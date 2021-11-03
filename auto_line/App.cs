@@ -19,16 +19,29 @@ namespace auto_line
         static string addinAssmeblyPath = Assembly.GetExecutingAssembly().Location;
         public Result OnStartup(UIControlledApplication a)
         {
-            
-            try { a.CreateRibbonTab("中興自動化"); } catch { }
-            RibbonPanel ribbonPanel = a.CreateRibbonPanel("中興自動化", "SinoPipe API");
+
+            RibbonPanel ribbonPanel = null;
+            try { a.CreateRibbonTab("中興工程自動化建模"); } catch { }
+            try { ribbonPanel = a.CreateRibbonPanel("中興工程自動化建模", "中興工程自動化建模"); }
+            catch
+            {
+                List<RibbonPanel> panel_list = new List<RibbonPanel>();
+                panel_list = a.GetRibbonPanels("中興工程自動化建模");
+                foreach (RibbonPanel rp in panel_list)
+                {
+                    if (rp.Name == "中興工程自動化建模")
+                    {
+                        ribbonPanel = rp;
+                    }
+                }
+            }
 
             PushButton pushbutton1 = ribbonPanel.AddItem(
-                new PushButtonData("SinoPipe", "Pipeline",
+                new PushButtonData("pipeline", "pipeline",
                     addinAssmeblyPath, "auto_line.Start"))
                         as PushButton;
             pushbutton1.ToolTip = "SinoPipe";
-            pushbutton1.LargeImage = convertFromBitmap(Properties.Resources.藍灰2);
+            pushbutton1.LargeImage = convertFromBitmap(Properties.Resources.Red);
 
             return Result.Succeeded;
         }
