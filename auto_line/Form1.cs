@@ -161,7 +161,7 @@ namespace auto_line
             {
                 HttpClient client = new HttpClient();
                 //client.BaseAddress = new Uri("http://127.0.0.1:8000/");            
-                client.BaseAddress = new Uri("http://bimdata.secltd/");
+                client.BaseAddress = new Uri("https://bimdata.sinotech.com.tw/");
                 client.DefaultRequestHeaders.Accept.Clear();
                 var headerValue = new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json");
                 client.DefaultRequestHeaders.Accept.Add(headerValue);
