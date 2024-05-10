@@ -15,6 +15,7 @@ using System.Runtime.InteropServices;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Globalization;
+using System.Net;
 
 namespace auto_line
 {
@@ -160,6 +161,8 @@ namespace auto_line
             try
             {
                 HttpClient client = new HttpClient();
+                //specify to use TLS 1.2 as default connection
+                ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
                 //client.BaseAddress = new Uri("http://127.0.0.1:8000/");            
                 client.BaseAddress = new Uri("https://bimdata.sinotech.com.tw/");
                 client.DefaultRequestHeaders.Accept.Clear();
@@ -172,7 +175,6 @@ namespace auto_line
             }
             catch (Exception)
             {
-
                 return null;
             }
         }
