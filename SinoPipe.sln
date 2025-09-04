@@ -9,6 +9,8 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SinoPipe_Setup", "SinoPipe_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinoPipe_2025", "SinoPipe_2025\SinoPipe_2025.csproj", "{DC0087ED-711B-6630-F23D-42C296DFCAD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinoPipe_2020", "SinoPipe_2020\SinoPipe_2020.csproj", "{BCCE7D6B-7429-4976-8FAE-6731BBFE0D84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{DC0087ED-711B-6630-F23D-42C296DFCAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC0087ED-711B-6630-F23D-42C296DFCAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC0087ED-711B-6630-F23D-42C296DFCAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCCE7D6B-7429-4976-8FAE-6731BBFE0D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCCE7D6B-7429-4976-8FAE-6731BBFE0D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCCE7D6B-7429-4976-8FAE-6731BBFE0D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCCE7D6B-7429-4976-8FAE-6731BBFE0D84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
